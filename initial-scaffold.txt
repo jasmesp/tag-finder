@@ -1,0 +1,52 @@
+NOTE: IF YOU SEE "GO" IN THE ANSWER, IT MEANS WHATEVER IS STANDARD/BEST PRACTICE FOR GO latest version.
+
+Project basics
+1) Languages and runtimes (e.g., Python 3.11, Node 20, Go 1.22): Go 
+2) Mono-repo or single service/library?: basic single developer repo
+3) Primary entry point (CLI, API server, library) and how it’s invoked: CLI, Go
+
+Environment and dependencies
+4) Dependency management preference (confirm uv + virtualenvs for Python?): Go
+5) Other package managers/tools in use (npm/pnpm/yarn, poetry, pip-tools, go modules, cargo, etc.): Go
+6) Environment configuration files present (.env, .env.example, .envrc/direnv)? Any config loader conventions: .env, .env.local, any Go specific conventions
+
+Build/run/dev
+7) Dev run command(s) you actually use (e.g., uv run app.py, npm run dev, make run, just dev): Go
+8) Is there a build step? If yes, exact command(s): Go
+9) Docker/Compose presence? If yes, the common docker compose up/down/build commands you actually use: No
+
+Testing
+10) Test framework(s) (pytest, unittest, jest, go test, etc.): Go
+11) Default test command: Go
+12) How to run a single test (exact syntax with example path/test name): Go
+13) Coverage command (if you care to track it): Go
+
+Lint/format/type-check
+14) Linters/formatters/type-checkers (ruff, black, mypy, eslint, prettier, tsc, golangci-lint, etc.): GO
+15) Exact commands: Go
+   - Lint check: Go
+   - Lint fix (if applicable): Go
+   - Format check: Go
+   - Format write: Go
+   - Type check: Go
+
+Task runners and scripts
+16) Task runner(s) (make/just/tox/nox/invoke/package.json scripts) and the targets you actually use: Go
+
+Data and migrations
+17) Database(s) used (engine/version), how to run locally, and migration tool/commands (alembic, prisma, flyway, django manage.py, etc.): SQLite in Dev local store in root.
+18) Seed/reset commands (if any): No
+
+Code architecture (big picture)
+19) Top-level directories and what they roughly contain (e.g., src/, internal/, api/, web/, scripts/, infra/, tests/): Go
+20) Brief description of main modules/services and how they interact (e.g., CLI -> core/ -> adapters for IO, domain layer pure logic, etc.): Not sure yet.
+21) Notable patterns (ports-and-adapters, event-driven, CQRS, hexagonal, clean architecture, etc.): Not sure yet.
+
+Ops/CI
+22) CI system (e.g., GitHub Actions) and any enforced commands/workflows worth noting: No
+23) Pre-commit hooks? Typical install/run command:
+
+Assistant rules and docs
+24) Which of these exist and key points we should carry into WARP.md: README.md, CLAUDE.md, .cursor rules/.cursorrules, .github/copilot-instructions.md: None, just your default global rule.
+25) Anything else future Warp instances must know that isn’t obvious (rate limits, required services, common gotchas): Use MCP calls optimistically.
+
