@@ -1,0 +1,14 @@
+
+Looking up lynx.invisible-island.net
+Making HTTPS connection to lynx.invisible-island.net
+SSL callback:ok, preverify_ok=1, ssl_okay=0
+SSL callback:ok, preverify_ok=1, ssl_okay=0
+SSL callback:ok, preverify_ok=1, ssl_okay=0
+Verified connection to lynx.invisible-island.net (cert=lynx.invisible-island.net)
+Certificate issued by: /C=US/ST=Arizona/L=Scottsdale/O=Starfield Technologies, Inc./OU=http:\/\/certs.starfieldtech.com\/repository\//CN=Starfield Secure Certificate Authority - G2
+Secure 256-bit TLSv1.3 (TLS_AES_256_GCM_SHA384) HTTP connection
+Sending HTTP request.
+HTTP request sent; waiting for response.
+HTTP/1.1 200 OK
+
+lynx: Can't access startfile https://lynx.invisible-island.net/
